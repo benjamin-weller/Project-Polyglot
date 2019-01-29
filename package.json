@@ -12,9 +12,13 @@
     "contributes": {
         "snippets": [
             {
-                "language": "",
-                "path": "./snippets/snippets.json"
-            }
+                "language": "javascript",
+                "path": "./snippets/javascript_snippets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python_snippets.json"
+            },
         ]
     }
 }
