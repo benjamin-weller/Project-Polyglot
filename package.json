@@ -1,7 +1,9 @@
 {
     "name": "project-polyglot",
     "displayName": "Project Polyglot",
+    "publisher": "benmweller",
     "description": "Runnable pseudocode through snippets.",
+    "icon": "flame.png",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.30.0"
@@ -18,7 +20,11 @@
             {
                 "language": "python",
                 "path": "./snippets/python_snippets.json"
-            },
+            }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/benjamin-weller/Project-Polyglot"
     }
 }
