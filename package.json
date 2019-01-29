@@ -1,0 +1,20 @@
+{
+    "name": "project-polyglot",
+    "displayName": "Project Polyglot",
+    "description": "Runnable pseudocode through snippets.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
