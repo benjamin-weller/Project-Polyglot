@@ -6,9 +6,10 @@ Programming entirely in pseudocode. All done through VS code snippets.
 
 Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 
-| YOLO   | SO                 |
-| ------ | ------------------ |
-| :soon: | :white_check_mark: |
+
+| YOLO    | SO      | AS       | A        |
+| ------- | ------- | -------- | -------- |
+| &#9989; | &#9940; | &#10024; | &#10060; |
 
 Proposed snippets:
 Turnary/Conditional
