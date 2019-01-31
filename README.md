@@ -6,13 +6,12 @@ Programming entirely in pseudocode. All done through VS code snippets.
 
 Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 
-Supported with a common API = &#9989;
-
-Looking for improvement = &#10024;
-
-Not currently possible/feasible = &#9940;
-
-Not implemented = &#10060;
+| Key                             | Meaning  |
+| ------------------------------- | -------- |
+| Supported with a common API     | &#9989;  |
+| Looking for improvement         | &#10024; |
+| Not currently possible/feasible | &#9940;  |
+| Not implemented                 | &#10060; |
 
 | Feature              | Python   | JavaScript | Java     | C++      |
 | -------------------- | -------- | ---------- | -------- | -------- |
