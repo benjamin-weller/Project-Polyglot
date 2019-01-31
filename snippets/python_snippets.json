@@ -118,6 +118,29 @@
         ],
         "description": "string interpolation"
     },
+    "Main entry point": {
+        "prefix": "main_entry",
+        "body": [
+            "if __name__ == '__main__':",
+            "\t$1"
+        ],
+        "description": "Main entry point"
+    },
+    "Regular expression match": {
+        "prefix": "regex_match",
+        "body": [
+            "import re",
+            "match = re.match(r\"${1:regex_here}\", ${2:string_here})"
+        ],
+        "description": "Regular expression match"
+    },
+    "Block comment": {
+        "prefix": "block_comment",
+        "body": [
+            "$BLOCK_COMMENT_START$1$BLOCK_COMMENT_END"
+        ],
+        "description": "Block comment"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [

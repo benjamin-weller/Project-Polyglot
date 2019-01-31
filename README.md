@@ -15,7 +15,7 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 
 | Feature              | Python   | JavaScript | Java     | C++      |
 | -------------------- | -------- | ---------- | -------- | -------- |
-| Print                | &#9989;  | &#9989;    | &#10060; | &#10060; |
+| print                | &#9989;  | &#9989;    | &#10060; | &#10060; |
 | if_else              | &#9989;  | &#9989;    | &#10060; | &#10060; |
 | if_elseif_else       | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | while_loop           | &#9989;  | &#10060;   | &#10060; | &#10060; |
@@ -28,6 +28,9 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | lambda               | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | user_input           | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | string_interpolation | &#10024; | &#10060;   | &#10060; | &#10060; |
+| main_entry           | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| regex_match          | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| block_comment        | &#9989;  | &#10060;   | &#10060; | &#10060; |
 
 Proposed snippets:
 
@@ -52,8 +55,6 @@ Static functions (non-class functions)
 Get input from file
 
 Regular expressions (search, match, replace)
-
-Main method/starting point for the program
 
 Dedicated logging????
 
