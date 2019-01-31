@@ -17,6 +17,107 @@
         ],
         "description": "If, else example"
     },
+    "If else if else": {
+        "prefix": "if_elseif_else",
+        "body": [
+            "if ${1:condition}:",
+            "\t$2",
+            "elif ${3:condition}:",
+            "\t$4",
+            "else:",
+            "\t$5"
+        ],
+        "description": "If else if else"
+    },
+    "While Loop": {
+        "prefix": "while_loop",
+        "body": [
+            "while ${1:condition}:",
+            "\t$2"
+        ],
+        "description": "While Loop"
+    },
+    "Element wise for loop": {
+        "prefix": "for_loop",
+        "body": [
+            "for $1 in ${2:iterable}:",
+            "\t$3"
+        ],
+        "description": "Element wise for loop"
+    },
+    "Break": {
+        "prefix": [
+            "bre",
+            "brea",
+            "break"
+        ],
+        "body": [
+            "break"
+        ],
+        "description": "Break"
+    },
+    "Return": {
+        "prefix": [
+            "return",
+            "retu",
+            "retur"
+        ],
+        "body": [
+            "return"
+        ],
+        "description": "Return"
+    },
+    "Program exit": {
+        "prefix": "program_exit",
+        "body": [
+            "import sys",
+            "sys.exit(0)"
+        ],
+        "description": "Program exit"
+    },
+    "Conditional": {
+        "prefix": [
+            "conditional",
+            "ternary"
+        ],
+        "body": [
+            "${1:true_code} if ${2:condition_check} else ${3:false_code}"
+        ],
+        "description": "Python conditional"
+    },
+    "Try catch finally": {
+        "prefix": "try_catch_finally",
+        "body": [
+            "try:",
+            "\t$1",
+            "catch ${2:BaseException}:",
+            "\t$3",
+            "finally:",
+            "\t$4"
+        ],
+        "description": "Try catch finally"
+    },
+    "Lambda": {
+        "prefix": "lambda",
+        "body": [
+            "lambda ${1:parameter_list}: ${2:expression}"
+        ],
+        "description": "Lambda"
+    },
+    "User input": {
+        "prefix": "user_input",
+        "body": [
+            "$2 = input('${1:prompt_here}')"
+        ],
+        "description": "User input"
+    },
+    "string interpolation": {
+        "prefix": "string_interpolation",
+        "body": [
+            "f'$1 {${2:expression_here}} $3'"
+        ],
+        "description": "string interpolation"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [
