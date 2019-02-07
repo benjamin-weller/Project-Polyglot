@@ -70,11 +70,16 @@ Binary contructs (or, xor, and, negation, bit access???)
 Array slice notation
 
 List of all keywords/special symbols
+https://www.programiz.com/python-programming/keyword-list
 
 Really large number
 
 Really small number
 
 "editor.suggest.snippetsPreventQuickSuggestions": false
+
+## Taglines
+
+Multilingual code bible
 
 ## Make a pull request for something you use!
