@@ -31,6 +31,7 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | main_entry           | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | regex_match          | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | block_comment        | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| switch               | &#9940;  | &#10060;   | &#10060; | &#10060; |
 
 Proposed snippets:
 
@@ -43,8 +44,6 @@ Selenium stuff?
 Do while loop???
 
 Block comments (done through the VS code special words??)
-
-switch
 
 variable declarations (useful for typed languages)
 
@@ -67,5 +66,15 @@ Basic data structures????
 Constants?????
 
 Binary contructs (or, xor, and, negation, bit access???)
+
+Array slice notation
+
+List of all keywords/special symbols
+
+Really large number
+
+Really small number
+
+"editor.suggest.snippetsPreventQuickSuggestions": false
 
 ## Make a pull request for something you use!
