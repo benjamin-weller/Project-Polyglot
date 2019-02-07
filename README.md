@@ -66,4 +66,6 @@ Basic data structures????
 
 Constants?????
 
+Binary contructs (or, xor, and, negation, bit access???)
+
 ## Make a pull request for something you use!
