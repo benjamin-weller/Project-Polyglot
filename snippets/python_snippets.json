@@ -141,6 +141,68 @@
         ],
         "description": "Block comment"
     },
+    "Reserved words": {
+        "prefix": "reserved_words",
+        "body": [
+            "$BLOCK_COMMENT_START",
+            "True - Is the boolean value for true.",
+            "False - Is the boolean value for false.",
+            "class - Is used to define a new user-defined class",
+            "finally - Is used with try…except block to do one final thing regardless of what executed before it those blocks",
+            "is - Used in Python for testing object identity. While the == operator is used to test if two variables are equal or not, is is used to test if the two variables refer to the same object",
+            "return - Returns a value from a function",
+            "None - This is the stand-in for null, says that the object reference doesn't point to anything.",
+            "continue - Will stop loop execution and go back and re-evaluate the loop condition/start a new iteration.",
+            "for - Is used for looping. Generally we use for when we know the number of times we want to loop.",
+            "lambda - Is used to create an anonymous function (function with no name). It is an inline function that does not contain a return statement. It consists of an expression that is evaluated and returned.",
+            "try - Create an exception handling block.",
+            "def - Defines a function.",
+            "from - from…import is used to import specific attributes or functions into the current namespace.",
+            "nonlocal - Is used to declare that a variable inside a nested function (function inside a function) is not local to it, meaning it lies in the outer inclosing function.",
+            "while - Creates a while loop, this loop runs until the condition at it's beginning is met.",
+            "and - Logical and.",
+            "del - Is used to delete the reference to an object.",
+            "global - Is used to declare that a variable inside the function is global (outside the function).",
+            "not - Logical not.",
+            "with - Is used to wrap the execution of a block of code within methods defined by the context manager.",
+            "as - Is used to create an alias while importing a module.",
+            "elif - A branch to check when your \"if\" branch fails.",
+            "if - Check a condition, if the condition is true execute the code in it's body.",
+            "or - Logical or.",
+            "yield - Is used inside a function like a return statement. But yield returns a generator.",
+            "assert - A testing debug test condition.",
+            "else - A bit of code that is execute if the condition in the \"if\" block fails.",
+            "import - Is used to import modules into the current namespace.",
+            "pass - Is a null statement in Python. Nothing happens when it is executed. It is used as a placeholder.",
+            "break - Will cease the loop execution at this point.",
+            "except - Is used to catch a specific exception that occurs when a program in running in a try block.",
+            "in - Is used to test if a sequence (list, tuple, string etc.) contains a value.",
+            "raise - Is used to trow and exception.",
+            "$BLOCK_COMMENT_END"
+        ],
+        "description": "Reserved words"
+    },
+    "Array slice": {
+        "prefix": "array_slice",
+        "body": [
+            "${1:array}[${2:start_inclusive} : ${3:stop_exclusive} : ${4| ,1|}]"
+        ],
+        "description": "Array slice"
+    },
+    "Large Number": {
+        "prefix": "large_number",
+        "body": [
+            "float(\"inf\")"
+        ],
+        "description": "Large Number"
+    },
+    "Small Number": {
+        "prefix": "small_number",
+        "body": [
+            "float(\"-inf\")"
+        ],
+        "description": "Small Number"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [
