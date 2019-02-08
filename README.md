@@ -55,6 +55,7 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | function                               | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | static_method                          | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | map                                    | &#10024; | &#10060;   | &#10060; | &#10060; |
+| cast                                   | &#9989;  | &#10060;   | &#10060; | &#10060; |
 
 
 Proposed snippets:
@@ -74,6 +75,8 @@ Basic data structures????
 Filter
 
 Reduce
+
+Casting to certain types
 
 "editor.suggest.snippetsPreventQuickSuggestions": false
 
