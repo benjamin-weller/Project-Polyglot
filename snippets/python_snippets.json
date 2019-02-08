@@ -297,6 +297,38 @@
         ],
         "description": "Run command"
     },
+    "Method": {
+        "prefix": "method",
+        "body": [
+            "def ${1:method_name}(self, $2):",
+            "\t$3"
+        ],
+        "description": "Method"
+    },
+    "Function": {
+        "prefix": "function",
+        "body": [
+            "def ${1:function_name}($2):",
+            "\t$3"
+        ],
+        "description": "Function"
+    },
+    "Static method": {
+        "prefix": "static_method",
+        "body": [
+            "@staticmethod",
+            "def ${1:method_name}($2):",
+            "\t$3"
+        ],
+        "description": "Static method"
+    },
+    "Map": {
+        "prefix": "map",
+        "body": [
+            "$3 = map(${1:function_to_apply}, ${2:list_of_inputs})"
+        ],
+        "description": "Map"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [

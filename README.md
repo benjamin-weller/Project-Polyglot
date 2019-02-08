@@ -51,6 +51,11 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | read_file                              | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | get_command_output                     | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | run_command                            | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| method                                 | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| function                               | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| static_method                          | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| map                                    | &#10024; | &#10060;   | &#10060; | &#10060; |
+
 
 Proposed snippets:
 
@@ -60,13 +65,15 @@ Typical Methods in those class definitions?
 
 Selenium stuff?
 
-Static functions (non-class functions)
-
 Dedicated logging????
 
 Inheritance classes??????
 
 Basic data structures????
+
+Filter
+
+Reduce
 
 "editor.suggest.snippetsPreventQuickSuggestions": false
 
