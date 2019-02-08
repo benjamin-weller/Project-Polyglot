@@ -203,6 +203,100 @@
         ],
         "description": "Small Number"
     },
+    "Regex replace": {
+        "prefix": "regex_replace",
+        "body": [
+            "import re",
+            "re.sub(${r'1':pattern}, ${2:replacement}, ${3:string})"
+        ],
+        "description": "Regex replace"
+    },
+    "Bitwise or": {
+        "prefix": "bitwise_or",
+        "body": [
+            "$1 | $2"
+        ],
+        "description": "Bitwise or"
+    },
+    "Bitwise and": {
+        "prefix": "bitwise_and",
+        "body": [
+            "$1 & $2"
+        ],
+        "description": "Bitwise and"
+    },
+    "Bitwise exclusive or": {
+        "prefix": "bitwise_xor",
+        "body": [
+            "$1 ^ $2"
+        ],
+        "description": "Bitwise exclusive or"
+    },
+    "Bitwise negation": {
+        "prefix": "bitwise_negation",
+        "body": [
+            "~$1"
+        ],
+        "description": "Bitwise negation"
+    },
+    "Bit shift left": {
+        "prefix": "bit_shift_left",
+        "body": [
+            "${1:thing_to_be_shifted} << ${2:amount_of_shift}"
+        ],
+        "description": "Bit shift left"
+    },
+    "Bit shift right": {
+        "prefix": "bit_shift_right",
+        "body": [
+            "${1:thing_to_be_shifted} >> ${2:amount_of_shift}"
+        ],
+        "description": "Bit shift right"
+    },
+    "Return long standing variable function": {
+        "prefix": "return_long_standing_variable_function",
+        "body": [
+            "def ${1:function_name}($2):",
+            "\treturned = ${3:None}",
+            "$4",
+            "\treturn returned"
+        ],
+        "description": "Return long standing variable"
+    },
+    "Return long standing variable method": {
+        "prefix": "return_long_standing_variable_method",
+        "body": [
+            "def ${1:function_name}(self, $2):",
+            "\treturned = ${3:None}",
+            "$4",
+            "\treturn returned"
+        ],
+        "description": "Return long standing variable method"
+    },
+    "Read file": {
+        "prefix": "read_file",
+        "body": [
+            "with open(r'${1:file_path_here}', 'r') as file:",
+            "\t$2 = file.read()"
+        ],
+        "description": "Read file"
+    },
+    "Get command ouput": {
+        "prefix": "get_command_output",
+        "body": [
+            "impport subprocess",
+            "${2:output_variable_here} = subprocess.run([${1:command_list_here}], stdout=subprocess.PIPE).stdout.decode('utf-8')"
+        ],
+        "description": "Get command ouput"
+    },
+    "Run command": {
+        "prefix": "run_command",
+        "body": [
+            "import subprocess",
+            "subprocess.run([${1:command_list_here}]"
+        ],
+        "description": "Run command"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [
