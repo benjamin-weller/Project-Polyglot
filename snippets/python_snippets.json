@@ -85,15 +85,25 @@
         ],
         "description": "Python conditional"
     },
+    "Try catch": {
+        "prefix": "try_catch",
+        "body": [
+            "try:",
+            "\t$1",
+            "catch ${2:BaseException} as ${3:_}:",
+            "\t$4"
+        ],
+        "description": "Try catch finally"
+    },
     "Try catch finally": {
         "prefix": "try_catch_finally",
         "body": [
             "try:",
             "\t$1",
-            "catch ${2:BaseException}:",
-            "\t$3",
+            "catch ${2:BaseException} as ${3:_}:",
+            "\t$4",
             "finally:",
-            "\t$4"
+            "\t$5"
         ],
         "description": "Try catch finally"
     },
@@ -329,12 +339,43 @@
         ],
         "description": "Map"
     },
+    "Filter": {
+        "prefix": "filter",
+        "body": [
+            "$1 = ${2:collection_to_cast_to}(filter(${3:function_to_apply}, ${4:list_of_inputs}))"
+        ],
+        "description": "filter"
+    },
+    "Reduce": {
+        "prefix": "reduce",
+        "body": [
+            "from functools import reduce",
+            "$1 = reduce(${2:function_to_apply}, ${3:list_of_inputs})"
+        ],
+        "description": "Reduce"
+    },
     "Cast": {
         "prefix": "cast",
         "body": [
             "$1($TM_SELECTED_TEXT)"
         ],
         "description": "Cast"
+    },
+    "Base class": {
+        "prefix": "base_class",
+        "body": [
+            "class $1:",
+            "\t$2"
+        ],
+        "description": "Base class"
+    },
+    "Inheritance class": {
+        "prefix": "inheritance_class",
+        "body": [
+            "class $1($2):",
+            "\t$3"
+        ],
+        "description": "Inheritance class"
     },
     "Empty snippet for making insertions easier": {
         "prefix": "",
