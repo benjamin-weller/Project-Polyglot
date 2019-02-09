@@ -13,6 +13,8 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | Not currently possible/feasible | &#9940;  |
 | Not implemented                 | &#10060; |
 
+<br>
+
 | Feature                                | Python   | JavaScript | Java     | C++      |
 | -------------------------------------- | -------- | ---------- | -------- | -------- |
 | print                                  | &#9989;  | &#9989;    | &#10060; | &#10060; |
@@ -57,7 +59,6 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | map                                    | &#10024; | &#10060;   | &#10060; | &#10060; |
 | cast                                   | &#9989;  | &#10060;   | &#10060; | &#10060; |
 
-
 Proposed snippets:
 
 Class Defintions
@@ -75,8 +76,6 @@ Basic data structures????
 Filter
 
 Reduce
-
-Casting to certain types
 
 "editor.suggest.snippetsPreventQuickSuggestions": false
 

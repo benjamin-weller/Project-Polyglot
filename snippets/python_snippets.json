@@ -325,7 +325,7 @@
     "Map": {
         "prefix": "map",
         "body": [
-            "$3 = map(${1:function_to_apply}, ${2:list_of_inputs})"
+            "$1 = ${2:collection_to_cast_to}(map(${3:function_to_apply}, ${4:list_of_inputs}))"
         ],
         "description": "Map"
     },
