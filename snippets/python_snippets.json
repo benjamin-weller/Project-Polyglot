@@ -329,6 +329,13 @@
         ],
         "description": "Map"
     },
+    "Cast": {
+        "prefix": "cast",
+        "body": [
+            "$1($TM_SELECTED_TEXT)"
+        ],
+        "description": "Cast"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [
