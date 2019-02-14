@@ -1,5 +1,7 @@
 # Project Polyglot
 
+**Context switching sucks, so don't!**
+
 Programming entirely in pseudocode. All done through VS code snippets.
 
 ## Features
