@@ -15,7 +15,8 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | Not currently possible/feasible | &#9940;  |
 | Not implemented                 | &#10060; |
 
-<br>
+
+ 
 
 | Feature                                | Python   | JavaScript | Java     | C++      |
 | -------------------------------------- | -------- | ---------- | -------- | -------- |
@@ -29,6 +30,7 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | system_exit                            | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | ternary/conditional                    | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | try_catch_finally                      | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| try_catch                              | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | lambda                                 | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | user_input                             | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | string_interpolation                   | &#10024; | &#10060;   | &#10060; | &#10060; |
@@ -37,7 +39,7 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | block_comment                          | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | switch                                 | &#9940;  | &#10060;   | &#10060; | &#10060; |
 | reserved_words                         | &#9989;  | &#10060;   | &#10060; | &#10060; |
-| array_slice (test me)                  | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| array_slice                            | &#10024; | &#10060;   | &#10060; | &#10060; |
 | do_while                               | &#9940;  | &#10060;   | &#10060; | &#10060; |
 | variable_declaration                   | &#10024; | &#10060;   | &#10060; | &#10060; |
 | constant                               | &#9940;  | &#10060;   | &#10060; | &#10060; |
@@ -58,31 +60,27 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | method                                 | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | function                               | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | static_method                          | &#9989;  | &#10060;   | &#10060; | &#10060; |
-| map                                    | &#10024; | &#10060;   | &#10060; | &#10060; |
+| map                                    | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | cast                                   | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| filter                                 | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| reduce                                 | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| base_class                             | &#9989;  | &#10060;   | &#10060; | &#10060; |
+| inheritance_class                      | &#9989;  | &#10060;   | &#10060; | &#10060; |
 
 Proposed snippets:
 
-Class Defintions
+Selenium 
 
-Typical Methods in those class definitions?
+Dedicated logging
 
-Selenium stuff?
+## Help how do I?
 
-Dedicated logging????
+### Make intellisense still appear when I'm in a snippet
 
-Inheritance classes??????
+"editor.suggest.snippetsPreventQuickSuggestions": false,
 
-Basic data structures????
+### Make snippets appear first on the list of intellisense
 
-Filter
-
-Reduce
-
-"editor.suggest.snippetsPreventQuickSuggestions": false
-
-## Taglines
-
-Multilingual code bible
+"editor.snippetSuggestions": "top",
 
 ## Make a pull request for something you use!
