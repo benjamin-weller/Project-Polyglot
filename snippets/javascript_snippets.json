@@ -2,7 +2,7 @@
     "Print": {
         "prefix": "print",
         "body": [
-            "console.log($1);"
+            "console.log($1)"
         ],
         "description": "Print"
     },
