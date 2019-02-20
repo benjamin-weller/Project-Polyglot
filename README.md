@@ -73,6 +73,8 @@ Selenium
 
 Dedicated logging
 
+Catch excess function parameters?
+
 ## Help how do I?
 
 ### Make intellisense still appear when I'm in a snippet
