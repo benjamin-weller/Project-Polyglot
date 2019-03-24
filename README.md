@@ -4,8 +4,6 @@
 
 Programming entirely in pseudocode. All done through VS code snippets.
 
-## Features
-
 Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 
 | Key                             | Meaning  |
@@ -15,8 +13,7 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | Not currently possible/feasible | &#9940;  |
 | Not implemented                 | &#10060; |
 
-
- 
+## Features
 
 | Feature                                | Python   | JavaScript | Java     | C++      |
 | -------------------------------------- | -------- | ---------- | -------- | -------- |
