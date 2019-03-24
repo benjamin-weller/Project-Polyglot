@@ -20,6 +20,268 @@
         ],
         "description": "If, else example"
     },
+    "If, else if, else": {
+        "prefix": "if_elseif_else",
+        "body": [
+            "if ($1)",
+            "{",
+            "\t$2",
+            "}",
+            "else if ($3)",
+            "{",
+            "\t$4",
+            "}",
+            "else",
+            "{",
+            "\t$5",
+            "}"
+        ],
+        "description": "If, else if, else"
+    },
+    "While loop": {
+        "prefix": "while_loop",
+        "body": [
+            "while ($1)",
+            "{",
+            "\t$2",
+            "}"
+        ],
+        "description": "While loop"
+    },
+    "For loop": {
+        "prefix": "for_loop",
+        "body": [
+            "for (let ${1:variable_here}; ${2:condition_here}; ${3:increment_or_decrement_here})",
+            "{",
+            "\t$4",
+            "}"
+        ],
+        "description": "For loop"
+    },
+    "Break": {
+        "prefix": [
+            "bre",
+            "brea",
+            "break"
+        ],
+        "body": [
+            "break"
+        ],
+        "description": "Break"
+    },
+    "Return": {
+        "prefix": [
+            "return",
+            "retu",
+            "retur"
+        ],
+        "body": [
+            "return"
+        ],
+        "description": "Return"
+    },
+    "System exit": {
+        "prefix": "system_exit",
+        "body": [
+            "throw new Error(\"$1\");"
+        ],
+        "description": "System exit"
+    },
+    "Conditional/Ternary": {
+        "prefix": [
+            "conditional",
+            "ternary"
+        ],
+        "body": [
+            "${1:condition} ? ${2:true_block} : ${3:false_block}"
+        ],
+        "description": "Conditional/Ternary"
+    },
+    "Try catch finally": {
+        "prefix": "try_catch_finally",
+        "body": [
+            "try {",
+            "\t$1",
+            "}",
+            "catch($2) {",
+            "\t$3",
+            "}",
+            "finally {",
+            "\t$4",
+            "}"
+        ],
+        "description": "Try catch finally"
+    },
+    "Try catch": {
+        "prefix": "try_catch",
+        "body": [
+            "try {",
+            "\t$1",
+            "}",
+            "catch($2) {",
+            "\t$3",
+            "}"
+        ],
+        "description": "Try catch finally"
+    },
+    "Lambda": {
+        "prefix": [
+            "lambda",
+            "arrow_function"
+        ],
+        "body": [
+            "(${1:parameters_here}) => ${2:function_here}"
+        ],
+        "description": "Lambda"
+    },
+    "User input": {
+        "prefix": "user_input",
+        "body": [
+            "let ${1:response} = prompt(\"${2:prompt_here}\");"
+        ],
+        "description": "User input"
+    },
+    "string_interpolation ": {
+        "prefix": "string_interpolation ",
+        "body": [
+            "`${1:string} ${2:expression_here} ${3:string}`"
+        ],
+        "description": "string_interpolation "
+    },
+    "Regex match": {
+        "prefix": "regex_match",
+        "body": [
+            "let ${1:match} = ${2:string_to_match_on}.match(${3:regex});"
+        ],
+        "description": "Regex match"
+    },
+    "Block comment": {
+        "prefix": "block_comment",
+        "body": [
+            "$BLOCK_COMMENT_START$1$BLOCK_COMMENT_END"
+        ],
+        "description": "Block comment"
+    },
+    "Switch": {
+        "prefix": "switch",
+        "body": [
+            "switch (${1:object_to_test})",
+            "{",
+            "\tcase ${2:condition_to_test}:",
+            "\t\t$3",
+            "\tdefault:",
+            "\t\t${4:default_condition}",
+            "}"
+        ],
+        "description": "Switch"
+    },
+    "Array slice": {
+        "prefix": "array_slice",
+        "body": [
+            "let ${1:new_array} = ${2:old_array}.slice(${3:start_inclusive}, ${4:end_exclusive});"
+        ],
+        "description": "Array slice"
+    },
+    "Do while": {
+        "prefix": "do_while",
+        "body": [
+            "do ",
+            "{",
+            "\t$1",
+            "}",
+            "while (${2:condition}); "
+        ],
+        "description": "Do while"
+    },
+    "Variable declaration": {
+        "prefix": "variable_declaration",
+        "body": [
+            "${1|let,var|} ${2:variable_name} = ${3:expression}"
+        ],
+        "description": "Variable declaration"
+    },
+    "Constant": {
+        "prefix": "constant",
+        "body": [
+            "const ${1:variable_name} = ${2:expression}"
+        ],
+        "description": "Constant"
+    },
+    "Large number": {
+        "prefix": "large_number",
+        "body": [
+            "let $1 = Number.POSITIVE_INFINITY"
+        ],
+        "description": "Large number"
+    },
+    "Small Number": {
+        "prefix": "small_number",
+        "body": [
+            "let $1 = Number.NEGATIVE_INFINITY"
+        ],
+        "description": "Small Number"
+    },
+    "Regex replace": {
+        "prefix": "regex_replace",
+        "body": [
+            "let $4 = ${1:original_string}.replace(${2:regex}, ${3:replacement_string})"
+        ],
+        "description": "Regex replace"
+    },
+    "Bitwise or": {
+        "prefix": "bitwise_or",
+        "body": [
+            "$1 | $2"
+        ],
+        "description": "Bitwise or"
+    },
+    "Bitwise and": {
+        "prefix": "bitwise_and",
+        "body": [
+            "$1 & $2"
+        ],
+        "description": "Bitwise and"
+    },
+    "Bitwise exclusive or": {
+        "prefix": "bitwise_xor",
+        "body": [
+            "$1 ^ $2"
+        ],
+        "description": "Bitwise exclusive or"
+    },
+    "Bitwise negation": {
+        "prefix": "bitwise_negation",
+        "body": [
+            "~ $1"
+        ],
+        "description": "Bitwise negation"
+    },
+    "Bit shift left": {
+        "prefix": "bit_shift_left",
+        "body": [
+            "${1:thing_to_be_shifted} << ${2:amount_of_shift}"
+        ],
+        "description": "Bit shift left"
+    },
+    "Bit shift right": {
+        "prefix": "bit_shift_right",
+        "body": [
+            "${1:thing_to_be_shifted} >> ${2:amount_of_shift}"
+        ],
+        "description": "Bit shift right"
+    },
+    "Return long standing variable function": {
+        "prefix": "return_long_standing_variable_function",
+        "body": [
+            "function ${1:function_name}($2)",
+            "{",
+            "\tlet returned = ${3:None}",
+            "\t$4",
+            "\treturn returned",
+            "}"
+        ],
+        "description": "Return long standing variable"
+    },
     "Empty snippet for making insertions easier": {
         "prefix": "",
         "body": [

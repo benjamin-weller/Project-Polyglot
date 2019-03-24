@@ -268,7 +268,7 @@
         "body": [
             "def ${1:function_name}($2):",
             "\treturned = ${3:None}",
-            "$4",
+            "\t$4",
             "\treturn returned"
         ],
         "description": "Return long standing variable"
@@ -278,7 +278,7 @@
         "body": [
             "def ${1:function_name}(self, $2):",
             "\treturned = ${3:None}",
-            "$4",
+            "\t$4",
             "\treturn returned"
         ],
         "description": "Return long standing variable method"
