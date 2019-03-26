@@ -67,6 +67,8 @@ Supports 100+ common patterns in Python, JavaScript, Java, and C++.
 | base_class                             | &#9989;  | &#10060;   | &#10060; | &#10060; |
 | inheritance_class                      | &#9989;  | &#10060;   | &#10060; | &#10060; |
 
+regex replace doesn't work for python
+
 Proposed snippets:
 
 Selenium 
