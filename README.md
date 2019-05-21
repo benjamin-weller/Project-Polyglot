@@ -50,21 +50,23 @@ Supports ~50 common patterns in Python, JavaScript, and Java.
 | bit_shift_left                         | &#9989;  | &#9989;    | &#10060; |
 | bit_shift_right                        | &#9989;  | &#9989;    | &#10060; |
 | return_long_standing_variable_function | &#9989;  | &#9989;    | &#10060; |
-| return_long_standing_variable_method   | &#9989;  | &#10060;   | &#10060; |
-| read_file                              | &#9989;  | &#10060;   | &#10060; |
-| get_command_output                     | &#9989;  | &#10060;   | &#10060; |
-| run_command                            | &#9989;  | &#10060;   | &#10060; |
-| method                                 | &#9989;  | &#10060;   | &#10060; |
-| function                               | &#9989;  | &#10060;   | &#10060; |
-| static_method                          | &#9989;  | &#10060;   | &#10060; |
-| map                                    | &#9989;  | &#10060;   | &#10060; |
-| cast                                   | &#9989;  | &#10060;   | &#10060; |
-| filter                                 | &#9989;  | &#10060;   | &#10060; |
-| reduce                                 | &#9989;  | &#10060;   | &#10060; |
+| return_long_standing_variable_method   | &#9989;  | &#9989;    | &#10060; |
+| read_file                              | &#9989;  | &#9989;    | &#10060; |
+| get_command_output                     | &#9989;  | &#9989;    | &#10060; |
+| run_command                            | &#9989;  | &#9989;    | &#10060; |
+| method                                 | &#9989;  | &#9989;    | &#10060; |
+| function                               | &#9989;  | &#9989;    | &#10060; |
+| static_method                          | &#9989;  | &#9989;    | &#10060; |
+| map                                    | &#9989;  | &#9989;    | &#10060; |
+| cast                                   | &#9989;  | &#9989;    | &#10060; |
+| filter                                 | &#9989;  | &#9989;    | &#10060; |
+| reduce                                 | &#9989;  | &#9989;    | &#10060; |
 | base_class                             | &#9989;  | &#10060;   | &#10060; |
 | inheritance_class                      | &#9989;  | &#10060;   | &#10060; |
 
 regex replace doesn't work for python
+
+check out the file reading thing for javascript
 
 Proposed snippets:
 
@@ -74,7 +76,7 @@ Dedicated logging
 
 Catch excess function parameters?
 
-## Help how do I...?
+## Help, how do I...?
 
 ### Make intellisense still appear when I'm in a snippet
 

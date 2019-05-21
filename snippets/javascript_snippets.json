@@ -271,7 +271,10 @@
         "description": "Bit shift right"
     },
     "Return long standing variable function": {
-        "prefix": "return_long_standing_variable_function",
+        "prefix": [
+            "return_long_standing_variable_function",
+            "return_long_standing_variable_method"
+        ],
         "body": [
             "function ${1:function_name}($2)",
             "{",
@@ -281,6 +284,97 @@
             "}"
         ],
         "description": "Return long standing variable"
+    },
+    "Read file": {
+        "prefix": "read_file",
+        "body": [
+            "let fs = require('fs') ",
+            "let ${2:data_value_here} = none",
+            "fs.readFile('${1:file_path_here}', (err, ${2:data_value_here}) => { ",
+            "\tif (err) throw err",
+            "}"
+        ],
+        "description": "Read file"
+    },
+    "Get command output": {
+        "prefix": "get_command_output",
+        "body": [
+            "// Requires Node",
+            "let ${2:output_value_here} = null",
+            "let { exec } = require('child_process');",
+            "exec('${1:command_here}', (error, stdout, stderr) => {",
+            "\tif (error) {",
+            "\t\tconsole.error(`exec error: ${error}`);",
+            "\t}",
+            "\t${2:output_value_here} = stdout",
+            "});"
+        ],
+        "description": "Get command output"
+    },
+    "Run command": {
+        "prefix": "run_command",
+        "body": [
+            "// Requires Node",
+            "let { exec } = require('child_process');",
+            "exec('${1:command_here}', (error, stdout, stderr) => {",
+            "\tif (error) {",
+            "\t\tconsole.error(`exec error: ${error}`);",
+            "\t}",
+            "});"
+        ],
+        "description": "Run command"
+    },
+    "Function/method": {
+        "prefix": [
+            "function",
+            "method"
+        ],
+        "body": [
+            "function ${1:function_name_here}(${2:function_parameters_here})",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "Function/method"
+    },
+    "Static method": {
+        "prefix": "static_method",
+        "body": [
+            "static ${1:method_name}(${2:args})",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "Static method"
+    },
+    "Map": {
+        "prefix": "map",
+        "body": [
+            "let ${1:new_array_here} = ${2:original_array_here}.map(${3:function_here})"
+        ],
+        "description": "Map"
+    },
+    "Cast": {
+        "prefix": "cast",
+        "body": [
+            "$1($TM_SELECTED_TEXT)"
+        ],
+        "description": "Cast"
+    },
+    "Filter": {
+        "prefix": "filter",
+        "body": [
+            "let ${1:new_array_here} = ${2:original_array_here}.filter(${3:function_here})"
+        ],
+        "description": "Filter"
+    },
+    "Reduce": {
+        "prefix": "reduce",
+        "body": [
+            "// Remember to have a function that takes the accumulator and then the current value in the array",
+            "let ${1:reduced_value} = ${2:original_array_here}.reduce(${3:function_here})"
+        ],
+        "description": "Reduce"
     },
     "Empty snippet for making insertions easier": {
         "prefix": "",
