@@ -1,0 +1,340 @@
+{
+    "Print": {
+        "prefix": "print",
+        "body": [
+            "System.out.println($1);"
+        ],
+        "description": "Print"
+    },
+    "If else": {
+        "prefix": "if_else",
+        "body": [
+            "if ($1)",
+            "{",
+            "\t$2",
+            "}",
+            "else",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "If else"
+    },
+    "If else if else": {
+        "prefix": "if_elseif_else",
+        "body": [
+            "if ($1)",
+            "{",
+            "\t$2",
+            "}",
+            "else if ($3)",
+            "{",
+            "\t$4",
+            "}",
+            "else",
+            "{",
+            "\t$5",
+            "}"
+        ],
+        "description": "If else if else"
+    },
+    "While loop": {
+        "prefix": "while_loop",
+        "body": [
+            "while ($1)",
+            "{",
+            "\t$2",
+            "}"
+        ],
+        "description": "While loop"
+    },
+    "For loop": {
+        "prefix": "for_loop",
+        "body": [
+            "for (${1:initialize}; ${2:stop_condition}; ${3:increment_or_decrement})",
+            "{",
+            "\t$4",
+            "}"
+        ],
+        "description": "For loop"
+    },
+    "Break": {
+        "prefix": "break",
+        "body": [
+            "break;"
+        ],
+        "description": "Break"
+    },
+    "Return": {
+        "prefix": "return",
+        "body": [
+            "return $1;"
+        ],
+        "description": "Return"
+    },
+    "System exit": {
+        "prefix": "system_exit",
+        "body": [
+            " System.exit(0);"
+        ],
+        "description": "System exit"
+    },
+    "Ternary condition": {
+        "prefix": [
+            "conditional",
+            "ternary"
+        ],
+        "body": [
+            "${1:condition} ? ${2:true_block} : ${3:false_block};"
+        ],
+        "description": "Ternary condition"
+    },
+    "Try catch finally": {
+        "prefix": "try_catch_finally",
+        "body": [
+            "try",
+            "{",
+            "\t$1",
+            "}",
+            "catch ($2)",
+            "{",
+            "\t$3",
+            "}",
+            "finally",
+            "{",
+            "\t$4",
+            "}"
+        ],
+        "description": "Try catch finally"
+    },
+    "Try catch": {
+        "prefix": "try_catch",
+        "body": [
+            "try",
+            "{",
+            "\t$1",
+            "}",
+            "catch ($2)",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "Try catch"
+    },
+    "Lambda": {
+        "prefix": "lambda",
+        "body": [
+            "($1) -> {",
+            "\t$2",
+            "};"
+        ],
+        "description": "Lambda"
+    },
+    "User input": {
+        "prefix": "user_input",
+        "body": [
+            "import java.util.Scanner;",
+            "Scanner in = new Scanner(System.in);",
+            "String $2 = in.nextLine();"
+        ],
+        "description": "User input"
+    },
+    "String interpolation": {
+        "prefix": "string_interpolation",
+        "body": [
+            "String $1 = \"$2\"+$3+\"$4\";"
+        ],
+        "description": "String interpolation"
+    },
+    "Main entry": {
+        "prefix": "main_entry",
+        "body": [
+            "public static void main(String args[])",
+            "{",
+            "\t$1",
+            "}"
+        ],
+        "description": "Main entry"
+    },
+    "Block comment": {
+        "prefix": "block_comment",
+        "body": [
+            "$BLOCK_COMMENT_START$1$BLOCK_COMMENT_END"
+        ],
+        "description": "Block comment"
+    },
+    "Switch": {
+        "prefix": "switch",
+        "body": [
+            "switch (${1:object_to_test})",
+            "{",
+            "\tcase ${2:condition_to_test}:",
+            "\t\t$3",
+            "\tdefault:",
+            "\t\t${4:default_condition}",
+            "}"
+        ],
+        "description": "Switch"
+    },
+    "Array slice": {
+        "prefix": "array_slice",
+        "body": [
+            "import java.util.Arrays;",
+            "$1 = Arrays.copyOfRange(${2:array_to_slice}, ${3:start_inclusive}, ${4:end_exclusive});"
+        ],
+        "description": "Array slice"
+    },
+    "Do while": {
+        "prefix": "do_while",
+        "body": [
+            "do",
+            "{",
+            "\t$1",
+            "} while($2)"
+        ],
+        "description": "Do while"
+    },
+    "Variable declaration": {
+        "prefix": "variable_declaration",
+        "body": [
+            "${1:type} $2 = new ${1:type}($3)"
+        ],
+        "description": "Variable declaration"
+    },
+    "Constant": {
+        "prefix": "constant",
+        "body": [
+            "final ${1:type} $2;"
+        ],
+        "description": "Constant"
+    },
+    "Large number": {
+        "prefix": "large_number",
+        "body": [
+            "import java.lang.Integer;",
+            "int $1 = Integer.MAX_VALUE;"
+        ],
+        "description": "Large number"
+    },
+    "Small number": {
+        "prefix": "small_number",
+        "body": [
+            "import java.lang.Integer;",
+            "int $1 = Integer.MIN_VALUE;"
+        ],
+        "description": "Small number"
+    },
+    "Bitwise or": {
+        "prefix": "bitwise_or",
+        "body": [
+            "$1 | $2"
+        ],
+        "description": "Bitwise or"
+    },
+    "Bitwise and": {
+        "prefix": "bitwise_and",
+        "body": [
+            "$1 & $2"
+        ],
+        "description": "Bitwise and"
+    },
+    "Bitwise exclusive or": {
+        "prefix": "bitwise_xor",
+        "body": [
+            "$1 ^ $2"
+        ],
+        "description": "Bitwise exclusive or"
+    },
+    "Bitwise negation": {
+        "prefix": "bitwise_negation",
+        "body": [
+            "~ $1"
+        ],
+        "description": "Bitwise negation"
+    },
+    "Bit shift left": {
+        "prefix": "bit_shift_left",
+        "body": [
+            "${1:thing_to_be_shifted} << ${2:amount_of_shift}"
+        ],
+        "description": "Bit shift left"
+    },
+    "Bit shift right": {
+        "prefix": "bit_shift_right",
+        "body": [
+            "${1:thing_to_be_shifted} >> ${2:amount_of_shift}"
+        ],
+        "description": "Bit shift right"
+    },
+    "Return long standing variable function": {
+        "prefix": [
+            "return_long_standing_variable_method"
+        ],
+        "body": [
+            "${5:access_modifer} ${1:return_type} ${2:function_name}($3)",
+            "{",
+            "\t${1:type} returned = new ${1:type}($3)",
+            "\t$4",
+            "\treturn returned",
+            "}"
+        ],
+        "description": "Return long standing variable"
+    },
+    "Return long standing variable function": {
+        "prefix": [
+            "return_long_standing_variable_function"
+        ],
+        "body": [
+            "${5:access_modifer} ${1:return_type} static ${2:function_name}($3)",
+            "{",
+            "\t${1:type} returned = new ${1:type}($3)",
+            "\t$4",
+            "\treturn returned",
+            "}"
+        ],
+        "description": "Return long standing variable"
+    },
+    "Read file": {
+        "prefix": "read_file",
+        "body": [
+            "import java.io.File;",
+            "import java.util.Scanner;",
+            "File file = new File(\"${1:path_to_file}\");",
+            "Scanner scanner = new Scanner(file);",
+            "while (scanner.hasNextLine())",
+            "String $2 = scanner.nextLine();"
+        ],
+        "description": "Read file"
+    },
+    "Method": {
+        "prefix": [
+            "method"
+        ],
+        "body": [
+            "${1:access_modifer} ${2:return_type} ${3:function_name}($4)",
+            "{",
+            "\t$5",
+            "}"
+        ],
+        "description": "Method"
+    },
+    "Static Method": {
+        "prefix": [
+            "static_method"
+        ],
+        "body": [
+            "${1:access_modifer} ${2:return_type} static ${3:function_name}($4)",
+            "{",
+            "\t$5",
+            "}"
+        ],
+        "description": "Static Method"
+    },
+    "Padding": {
+        "prefix": "",
+        "body": [
+            ""
+        ],
+        "description": "Padding"
+    },
+}
