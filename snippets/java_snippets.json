@@ -330,11 +330,31 @@
         ],
         "description": "Static Method"
     },
+    "Base class": {
+        "prefix": "base_class",
+        "body": [
+            "public class $1",
+            "{",
+            "\t$2",
+            "}"
+        ],
+        "description": "Base class"
+    },
+    "Inheritance class": {
+        "prefix": "inheritance_class",
+        "body": [
+            "public class $1 extends $2",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "Inheritance class"
+    },
     "Padding": {
         "prefix": "",
         "body": [
             ""
         ],
         "description": "Padding"
-    },
+    }
 }

@@ -61,8 +61,8 @@ Supports ~50 common patterns in Python, JavaScript, and Java.
 | cast                                   | &#9989;  | &#9989;    | &#10024; |
 | filter                                 | &#9989;  | &#9989;    | &#10024; |
 | reduce                                 | &#9989;  | &#9989;    | &#10024; |
-| base_class                             | &#9989;  | &#10060;   | &#10060; |
-| inheritance_class                      | &#9989;  | &#10060;   | &#10060; |
+| base_class                             | &#9989;  | &#10060;   | &#9989;  |
+| inheritance_class                      | &#9989;  | &#10060;   | &#9989;  |
 
 regex replace doesn't work for python
 
