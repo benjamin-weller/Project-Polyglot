@@ -90,7 +90,7 @@
         "body": [
             "try:",
             "\t$1",
-            "catch ${2:BaseException} as ${3:_}:",
+            "except ${2:BaseException} as ${3:_}:",
             "\t$4"
         ],
         "description": "Try catch finally"
@@ -100,7 +100,7 @@
         "body": [
             "try:",
             "\t$1",
-            "catch ${2:BaseException} as ${3:_}:",
+            "except ${2:BaseException} as ${3:_}:",
             "\t$4",
             "finally:",
             "\t$5"
